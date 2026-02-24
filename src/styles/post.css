@@ -1,0 +1,88 @@
+@keyframes breathe {
+    0% { opacity: 100% }
+    50% { opacity: 50% }
+    100% { opacity: 100% }
+}
+
+#post-body {
+    transform: translate(-50%, 10px);
+    flex-direction: column;
+    margin-bottom: 2em;
+    position: relative;
+    max-width: 800px;
+    text-align: left;
+    display: flex;
+    width: 90%;
+    left: 50%;
+    gap: 10px;
+}
+
+/*Custom Elements*/
+blockquote {
+    border-left: solid 4px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.03);
+    font-style: italic;
+    padding: 10px;
+}
+
+blockquote {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px
+}
+
+blockquote p {
+    margin: 0.1em 0 0 0;
+    font-size: 0.9em;
+    opacity: 80%;
+}
+
+video {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex-direction: column;
+    font-style: italic;
+    padding: 10px;
+    display: flex;
+    gap: 9px;
+}
+
+/*Header */
+#header sub { margin-top: -0.5em; }
+#header h2 { margin-bottom: 0; }
+#header a { user-select: none }
+
+/*Content*/
+hr {
+    margin: 1em 0 1em 0;
+    opacity: 30%;
+}
+
+#content img, video {
+    max-width: 100%;
+    width: 100%;
+}
+
+#content a { animation: breathe 1.5s linear infinite; }
+
+/*Tables*/
+table {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 3px;
+    width: 100%;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px;
+}
+
+td {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 10px;
+    opacity: 80%;
+}
+
+/*pre > code {*/
+/*    background: rgba(255, 255, 255, 0.02);*/
+/*    padding: 10px;*/
+/*    opacity: 80%;*/
+/*}*/

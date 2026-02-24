@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+	--accent: #c187ff;
+	--accent-dark: #43315b;
+
+	--background: #070707;
+	--code: #1E1E1E;
+}
+
+body {
+	font-family: "Jetbrains Mono", Arial, Helvetica, serif;
+	background: var(--background);
+	text-align: center;
+	margin-top: 25px;
+	color: white;
+}
+
+::selection, ::-moz-selection {
+	background: white;
+	text-shadow: none;
+	color: #0a0a0a;
+}
+
+.box {
+	border: solid 2px #222;
+	padding: 10px;
+}
+
+.box .title {
+	background: var(--background);
+	position: absolute;
+	user-select: none;
+	font-size: 0.75em;
+	padding: 0 6px;
+	top: -0.75em;
+	color: #888;
+	left: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover { text-decoration: underline; }
+
+.subtle {
+	font-size: 0.8em;
+	opacity: 25%;
+}
+
+.grey { color: #777; }
+
+@media (prefers-color-scheme: dark) {
+	.astro-code {
+		background: var(--accent-dark);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		padding: 10px;
+	}
+}
+
+div > p > code {
+	padding: 2px 5px;
+	background: rgba(255, 255, 255, 0.03);
+}

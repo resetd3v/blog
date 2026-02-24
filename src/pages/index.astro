@@ -1,0 +1,43 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import '../styles/home.css';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+</head>
+<body>
+<main>
+	<span id="title">confusing.wtf</span><br>
+	<span class="subtle">a very confusing blog</span>
+
+	<div id="links">
+		<a href="https://x.com/nvidiartx3090">twitter</a>
+		<a href="https://github.com/resetd3v">github</a>
+	</div>
+	<div id="posts" class="box">
+		<span class="title">posts</span>
+		{
+			posts.map((post) => (
+				<a class="post" href={`/${post.id}`}>>
+					<span class="post-title">{post.data.title}</span>
+					<p><FormattedDate date={post.data.pubDate} /></p>
+				</a>
+			))
+		}
+	</div>
+</main>
+</body>
+</html>

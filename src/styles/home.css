@@ -1,0 +1,56 @@
+@keyframes fade {
+    0% { background-position: 0 50%; }
+    100% { background-position: 400% 50%; }
+}
+
+#title {
+    background: linear-gradient(90deg, var(--accent), var(--accent-dark), var(--accent));
+    animation: fade 5s linear infinite;
+    transition: filter 0.3s ease-out;
+    background-size: 400% auto;
+    background-clip: text;
+    color: transparent;
+}
+
+#posts {
+    transform: translate(-50%, 10px);
+    flex-direction: column;
+    position: relative;
+    max-width: 800px;
+    display: flex;
+    width: 90%;
+    left: 50%;
+    gap: 10px;
+}
+
+.post {
+    padding: 5px 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.post:hover {
+    text-decoration: none;
+    background: #101010;
+}
+
+.post p {
+    font-size: 0.75em;
+    opacity: 0.5;
+    margin: 0;
+}
+
+#links { user-select: none; }
+#links a { font-size: 0.8em; }
+
+#credit {
+    transform: translate(-50%, calc(-100% - 5px));
+    transition: opacity 0.3s;
+    position: absolute;
+    font-size: 0.8em;
+    opacity: 0.1;
+    top: 100%;
+    left: 50%;
+}
+
+#credit:hover { opacity: 0.3; }
