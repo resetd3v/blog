@@ -4,6 +4,7 @@
 }
 
 #title {
+    font-size: 1.3rem;
     background: linear-gradient(90deg, var(--accent), var(--accent-dark), var(--accent));
     animation: fade 5s linear infinite;
     transition: filter 0.3s ease-out;
@@ -38,6 +39,10 @@
     font-size: 0.75em;
     opacity: 0.5;
     margin: 0;
+}
+
+.post-title {
+    display: flex;
 }
 
 #links { user-select: none; }

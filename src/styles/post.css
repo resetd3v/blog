@@ -11,11 +11,21 @@
     position: relative;
     max-width: 800px;
     text-align: left;
+    font-size: 0.85em;
+    line-height: 1.6;
     display: flex;
     width: 90%;
     left: 50%;
     gap: 10px;
 }
+
+/*@media screen and (max-width: 1025px) {*/
+/*    #post-body {*/
+/*        !*transform: initial;*!*/
+/*        transform: translate(-55%, 10px);*/
+/*        !*position: inherit;*!*/
+/*    }*/
+/*}*/
 
 /*Custom Elements*/
 blockquote {
@@ -47,12 +57,12 @@ video {
 
 /*Header */
 #header sub { margin-top: -0.5em; }
-#header h2 { margin-bottom: 0; }
+#header h2 { margin: 0; }
 #header a { user-select: none }
 
 /*Content*/
 hr {
-    margin: 1em 0 1em 0;
+    margin: 3em 0 1em 0;
     opacity: 30%;
 }
 
