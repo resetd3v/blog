@@ -22,21 +22,20 @@ const { title, description, pubDate, updatedDate, image } = Astro.props;
 			<article>
 				<div id="post-body">
 					<div id="header">
+						<a href="/"><- Back</a>
 						<div class="title">
-							<div class="date">
-								<a href="/"><- Back</a>
-								<h2>{title}</h2>
-								<FormattedDate date={pubDate} />
-								{
-									updatedDate && (
-										<div class="grey">
-											Last updated on <FormattedDate date={updatedDate} />
-										</div>
-									)
-								}
-							</div>
+							<h2>{title}</h2>
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="grey">
+										(<FormattedDate date={updatedDate} />)
+									</div>
+								)
+							}
 						</div>
-						<hr />
+						{description}
+						<hr class="subtle" />
 					</div>
 
 					<div id="content">

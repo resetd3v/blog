@@ -8,7 +8,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 	site: 'https://blog.confusing.wtf',
 	server: {
-		allowedHosts: ['7d08d7b2522a.ngrok.app'],
+		allowedHosts: [],
 	},
 	integrations: [mdx(), sitemap()],
 	markdown: {
