@@ -8,7 +8,7 @@
 	--accent-dark: #43315b;
 
 	--background: #030303;
-	--code: #191919;
+	--code: rgb(50 50 50 / 0.1);
 }
 
 body {
@@ -64,7 +64,7 @@ a:hover { text-decoration: underline; }
 @media (prefers-color-scheme: dark) {
 	.astro-code {
 		padding: 7px;
-		background: var(--accent-dark);
+		background: var(--code) !important;
 		border: 2px solid rgba(255, 255, 255, 0.1);
 		line-height: 1.3;
 	}

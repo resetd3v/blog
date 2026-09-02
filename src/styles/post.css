@@ -30,7 +30,7 @@
 /*Custom Elements*/
 blockquote {
     border-left: solid 4px rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--code);
     font-style: italic;
     padding: 10px;
 }
