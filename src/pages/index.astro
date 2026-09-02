@@ -30,10 +30,11 @@ const posts = (await getCollection('blog')).sort(
 	<div id="posts" class="box">
 		<span class="title">posts</span>
 		{
-			posts.map((post) => (
-				<a class="post" href={`/${post.id}`}>>
-					<span class="post-title">{post.data.title}</span>
-					<p><FormattedDate date={post.data.pubDate} /></p>
+			posts.map((post, i) => (
+				<>{(i > 0 && (<hr/>))}</>
+				<a class="post" href={`/${post.id}`}>
+					<div class="post-title">> {post.data.title} <FormattedDate date={post.data.pubDate} /></div>
+					<p>{post.data.description}</p>
 				</a>
 			))
 		}
