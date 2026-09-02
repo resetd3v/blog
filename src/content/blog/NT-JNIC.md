@@ -225,7 +225,7 @@ s[15]    = nonce[2]              (from ByteBuffer+0x28)
 [^4]
 ---
 
-### Dumping the keystream
+# Dumping the keystream
 The variable containing the `keystream` ptr can be found directly above the first `cmp` instruction, find the operand in the disasm, the value written is the ptr to the `keystream`; or in the decomp it will inline the ptr above the first/topmost `do while` loop.
 
 To dump the `keystream` at runtime, dump this memory region after the `ChaCha20` rounds execute (breakpoint the return).\
