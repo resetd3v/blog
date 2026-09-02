@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+description: 'an example of what the blog styling looks like'
 pubDate: '-- -- 1970'
 ---
 
@@ -39,7 +39,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ### Output
 
-![blog placeholder](../../assets/default.png)
+![blog placeholder](../../assets/88x31.png)
 
 ## Blockquotes
 
