@@ -1,10 +1,8 @@
 <div align="center">
-    <h1>Blog</h1>
-    <div>
-        <img alt="icon" src="assets/icon.png"/>
-    </div>
-    <br/>
+    <h2 style="display: inline">Blog</h2>
 </div>
+
+<img alt="icon" src="public/favicon.ico" /> A confusing blog
 
 ## Commands
 
